@@ -151,9 +151,9 @@ func (s *Spinner) Run() error {
 		}()
 	}
 
-	_, _ = p.Run()
+	_, err = p.Run()
 
-	return nil
+	return err
 }
 
 // runAccessible runs the spinner in an accessible mode (statically).
